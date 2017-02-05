@@ -7,8 +7,11 @@ Returns a String description of a given object's shape.
 ```js
 import shape from 'object-shape';
 
-shape('hello')        // [String 0,1,2,3,4]
-shape({ foo:'bar' })  // [Object foo]
+shape('hello')        // string
+shape(2)              // number
+shape(undefined)      // undefined
+shape(null)           // [Null]
+shape({ a:1, b:2 })   // [Object a,b]
 shape(/reg/i)         // [RegExp]
 shape(new Foo())      // [Foo a,b,c]
 ```
