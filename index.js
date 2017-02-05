@@ -1,13 +1,13 @@
-let toString = {}.toString,
-	hop = {}.hasOwnProperty;
+var toString = Object.prototype.toString,
+	hop = Object.prototype.hasOwnProperty,
+	r = / (.*)\]$/;
 module.exports = function objectShape(obj) {
-	let out = '';
-	for (let i in obj) if (hop.call(obj, i)) {
-		out += (out?',':' ') + i;
+	var type = typeof obj;
+	if (type!=='object') return type;
+	var out = '';
+	for (var i in obj) if (hop.call(obj, i)) {
+		out += (out ? ',' : ' ') + i;
 	}
-	let name = toString.call(obj).match(/ (.*)\]$/)[1];
-	if (name==='Object' && obj.constructor) {
-		name = obj.constructor.name || name;
-	}
+	var name = obj.constructor && obj.constructor.name || toString.call(obj).match(r)[1];
 	return '[' + name + out + ']';
 };

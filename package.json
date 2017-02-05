@@ -1,12 +1,15 @@
 {
   "name": "object-shape",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Returns a String description of a given object's shape.",
   "main": "index.js",
   "repository": "developit/object-shape",
   "scripts": {
-    "test": "echo \"todo: add tests\""
+    "test": "node test"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "object",
     "shape"
