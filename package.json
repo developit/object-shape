@@ -1,0 +1,15 @@
+{
+  "name": "object-shape",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"todo: add tests\""
+  },
+  "keywords": [
+    "object",
+    "shape"
+  ],
+  "author": "Jason Miller <jason@developit.ca> (http://jasonformat.com)",
+  "license": "MIT"
+}
