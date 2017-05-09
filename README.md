@@ -1,5 +1,7 @@
 # `object-shape`
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/developit/object-shape.svg)](https://greenkeeper.io/)
+
 [![NPM](https://img.shields.io/npm/v/object-shape.svg)](https://www.npmjs.com/package/object-shape)
 
 Returns a String description of a given object's shape.
